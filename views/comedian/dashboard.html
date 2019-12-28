@@ -1,0 +1,188 @@
+<!-- <main>
+
+        <div class="row">
+             <div class="col m3 s12">
+                     <div class="card">
+             <div class="card-image">
+             <img src="https://i.ibb.co/G7nCy1w/remy-hat.jpg">
+             <span class="card-title">Hi, Remy</span>
+             </div>
+             <div class="card-content">
+                 <p>Rating: <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span></p>
+                 <p>Reviews: 10</p>
+                 <p>Meals: 4</p>
+             </div>
+             <div class="card-action">
+             <a href="#" data-target="slide-out-create-meal" class="sidenav-trigger">Add New Meal</a>
+             </div>
+            </div>
+             </div>
+            <div class="col m9 s12">
+                <h4>Manage Your Meals</h4>
+                   <table>
+         <thead>
+           <tr>
+               <th></th>
+               <th>Name</th>
+               <th>Category</th>
+               <th>Price</th>
+               <th></th>
+           </tr>
+         </thead>
+ 
+         <tbody>
+             {{#each meals}}
+             <tr>
+             <td><img src="{{this.photo}}" width="100px"></td>
+             <td>{{this.mealName}}</td>
+             <td>{{this.category}}</td>
+             <td>${{this.price}}</td>
+             <td>
+             <a class="btn btn-small blue sidenav-trigger white-text edit-meal-btn btn-sm-action" data-id="{{this.id}}" href="#" data-target="slide-out-edit-meal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+             <button id="delete-meal-confirm" class="btn btn-small red modal-trigger btn-sm-action" href="#delete-meal-modal" data-id="{{this.id}}" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>
+             </tr>
+             {{/each}}
+         </tbody>
+       </table>
+            </div>
+ 
+         <div class="col s12">
+ 
+         </div>
+ 
+        
+    </div>
+ 
+ </main>
+ 
+ {{!-- //create meal --}}
+ <ul id="slide-out-create-meal" class="sidenav sidenav-right">
+     <li><div class="user-view">
+         <h5>Create New Meal</h5>
+             <div class="row">
+                 <form class="col s12" action="/api/meal/1" method="POST">
+                 <div class="row">
+                     <div class="input-field col s12">
+                     <i class="material-icons prefix">local_pizza</i>
+                     <input name="mealName"  id="mealName" type="text" class="validate">
+                     <label for="mealName">Meal Name</label>
+                     </div>
+                     <div class="input-field col s12">
+                     <i class="material-icons prefix">attach_money</i>
+                     <input name="price" id="price" type="number" class="validate">
+                     <label for="price">Price</label>
+                     </div>
+                 <div class="input-field col s12">
+                     <select  id="category" name="category">
+                     <option value="" disabled>Category</option>
+                     <option value="american" selected>American</option>
+                     <option value="mediterranean">Mediterranean</option>
+                     <option value="european">European</option>
+                     <option value="latin">Latin</option>
+                     <option value="caribbean">Caribbean</option>
+                     <option value="asian">Asian</option>
+                     </select>
+                     <label>Food Category</label>
+                 </div>
+                  <div class="input-field col s12">
+                     <i class="material-icons prefix">list</i>
+                     <input name="ingredients" id="ingredients" type="text" class="validate">
+                     <label for="ingredients">Ingredients (seperate by comma)</label>
+                     </div>
+                  <div class="input-field col s12">
+                     <i class="material-icons prefix">add_a_photo</i>
+                     <input name="photo" id="photo" type="text" class="validate">
+                     <label for="photo">Photo (URL)</label>
+                 </div>
+                 <div class="input-field col s12">
+                     <select id="address" name="address">
+                     <option value="" disabled>Select Pickup Address</option>
+                     <option value="123 Main St, Austin, TX 78759" selected>123 Main St, Austin, TX 78759</option>
+                     <option value="4321 Justice Ln, New York, NY 10221">4321 Justice Ln, New York, NY 10221</option>
+                     <option value="2342 Perl St, San Diego, CA 3222">2342 Perl St, Vista, CA 92018</option>
+                     <option value="4321 Salt Lake Rd, Austin, TX 78758">4321 Salt Lake Rd, Austin, TX 78758</option>
+                     </select>
+                     <label>Pickup Address</label>
+                 </div>
+                     <button class="btn btn-small blue" style="float: right">Save</button>
+                 </div>
+                 </form>
+             </div>
+       </div>
+     </div>
+   </ul>
+ 
+   {{!-- edit meal --}}
+ 
+   <ul id="slide-out-edit-meal" class="sidenav sidenav-right">
+     <li><div class="user-view">
+         <h5>Edit Meal</h5>
+             <div class="row">
+                 <form class="col s12" id="meal_update_form">
+                 <div class="row">
+                     <div class="input-field col s12">
+                     <i class="material-icons prefix">local_pizza</i>
+                     <input name="mealName"  id="edit_mealName" type="text" class="validate">
+                     <label for="edit_mealName">Meal Name</label>
+                     </div>
+                     <div class="input-field col s12">
+                     <i class="material-icons prefix">attach_money</i>
+                     <input name="price" id="edit_price" type="number" class="validate">
+                     <label for="price">Price</label>
+                     </div>
+                 <div class="input-field col s12">
+                     <select  id="edit_category" name="category">
+                     <option value="" disabled>Category</option>
+                     <option value="american">American</option>
+                     <option value="mediterranean">Mediterranean</option>
+                     <option value="european">European</option>
+                     <option value="latin">Latin</option>
+                     <option value="caribbean">Caribbean</option>
+                     <option value="asian">Asian</option>
+                     </select>
+                     <label>Food Category</label>
+                 </div>
+                  <div class="input-field col s12">
+                     <i class="material-icons prefix">list</i>
+                     <input name="ingredients" id="edit_ingredients" type="text" class="validate">
+                     <label for="ingredients">Ingredients (seperate by comma)</label>
+                 </div>
+                 <div class="input-field col s12">
+                     <i class="material-icons prefix">add_a_photo</i>
+                     <input name="photo" id="edit_photo" type="text" class="validate">
+                     <label for="photo">Photo (URL)</label>
+                 </div>
+                 <div class="input-field col s12">
+                     <select id="edit_address" name="address">
+                     <option value="" disabled>Select Pickup Address</option>
+                     <option value="123 Main St, Austin, TX 78759" selected>123 Main St, Austin, TX 78759</option>
+                     <option value="4321 Justice Ln, New York, NY 10221">4321 Justice Ln, New York, NY 10221</option>
+                     <option value="2342 Perl St, San Diego, CA 3222">2342 Perl St, Vista, CA 92018</option>
+                     <option value="4321 Salt Lake Rd, Austin, TX 78758">4321 Salt Lake Rd, Austin, TX 78758</option>
+                     </select>
+                     <label>Pickup Address</label>
+                 </div>
+                     <button class="btn btn-small blue update-meal-btn" style="float: right" id="update-meal-btn" data-id="">Save</button>
+                 </div>
+                 </form>
+             </div>
+       </div>
+     </div>
+   </ul>
+ 
+ 
+     Modal Structure
+   <div id="delete-meal-modal" class="modal">
+     <div class="modal-content">
+       <h5>Are you sure you want to delete?</h5>
+       <input id="meal_id_to_delete" class="text" value="" hidden>
+     </div>
+     <div class="modal-footer">
+       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+       <a href="#!" class="modal-close waves-effect waves-green  btn-small red delete-meal-btn">Delete</a>
+     </div>
+   </div> -->
