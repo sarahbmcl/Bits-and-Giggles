@@ -755,8 +755,12 @@
   color: #2962FF !important;
 }
 
-.light-blue {
-  background-color: #03a9f4 !important;
+.white-background {
+  background-color: #FFFFFF !important;
+}
+
+.light-blue-background {
+  background-color: #6dc7ff;
 }
 
 .light-blue-text {
@@ -1651,8 +1655,8 @@
   color: #ffab00 !important;
 }
 
-.grey {
-  background-color: #feff5eff!important;
+.dark {
+  background-color: rgb(0, 0, 0)!important;
 }
 
 .orange-text {
@@ -2788,6 +2792,7 @@ video.responsive-video {
   display: inline-block;
   float: left;
   font-size: 24px;
+  color: #000000;
 }
 
 .breadcrumb:before {
@@ -4300,6 +4305,7 @@ nav i.material-icons {
   font-size: 24px;
   height: 56px;
   line-height: 56px;
+  color: #000000;
 }
 
 nav .nav-wrapper {
@@ -4328,10 +4334,10 @@ nav .sidenav-trigger i {
 
 nav .brand-logo {
   position: absolute;
-  color: #fff;
   display: inline-block;
   font-size: 2.1rem;
   padding: 0;
+  background: transparent !important;
 }
 
 nav .brand-logo.center {
@@ -4345,6 +4351,7 @@ nav .brand-logo.center {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+            background: transparent !important;
   }
   nav .brand-logo.left, nav .brand-logo.right {
     padding: 0;
@@ -4358,6 +4365,7 @@ nav .brand-logo.center {
     right: 0.5rem;
     left: auto;
   }
+  
 }
 
 nav .brand-logo.right {
