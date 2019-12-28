@@ -9,44 +9,45 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="../models/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../models/materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../../models/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../../models/materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><image src="../public/images/small_logo.png"></a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#">Logout</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="login.html">Login</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="comedian_profile.html">Profile</a></li>
-        </ul>
+  <nav class="white-background" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><image src="../../public/images/small_logo.png"></a>
+      <ul class="right hide-on-med-and-down">
+          <li><a class="black-text" href="#">Logout</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+          <li><a class="black-text" href="../auth/login.html">Login</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+          <li><a class="black-text" href="../user/comedian_profile.html">Profile</a></li>
+      </ul>
 
       <ul id="nav-mobile" class="sidenav">
-          <li><a href="comedian_profile.html">Profile</a></li>
-          <li><a href="login.html">Login</a></li>
+          <li><a href="../user/comedian_profile.html">Profile</a></li>
+          <li><a href="../auth/login.html">Login</a></li>
           <li><a href="#">Logout</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   
-  <div class="section no-pad-bot" id="index-banner">
+  <div class="section no-pad-bot light-blue-background" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Bits and Giggles</h1>
+      <h1 class="header center white-text">BITS & GIGGLES</h1>
       <div class="row center">
         <h5 class="header col s12 light">Click dates on our calendar to explore open mics in Austin</h5>
       </div>
-      <div class="row center">
+      <!-- <div class="row center">
         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
       </div>
       <div id="react-container"></div>
     <script src="index.jsx"></script>
+      </div> -->
       <br><br>
 
     </div>
@@ -89,7 +90,7 @@
     <br><br>
   </div> -->
 
-  <footer class="page-footer grey">
+  <footer class="page-footer dark">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -98,15 +99,6 @@
 
 
         </div>
-        <!-- <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div> -->
         <div class="col l3 s12">
           <h5 class="white-text">Connect With Us</h5>
           <ul>
@@ -115,6 +107,9 @@
             <li><a class="white-text" href="https://github.com/sarahbmcl">Sarah 'Mac' McLaughlin</a></li>
             <li><a class="white-text" href="https://github.com/stanstanley512">Shane Stanley</a></li>
           </ul>
+        </div>
+        <div class="col l3 s12">
+            <image src="../../public/images/inverted.png">
         </div>
       </div>
     </div>
@@ -128,8 +123,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="../models/materialize/js/materialize.js"></script>
-  <script src="../models/materialize/js/init.js"></script>
+  <script src="../../models/materialize/js/materialize.js"></script>
+  <script src="../../models/materialize/js/init.js"></script>
 
   </body>
 </html>
