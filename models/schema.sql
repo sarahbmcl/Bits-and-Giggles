@@ -1,3 +1,13 @@
 DROP DATABASE IF EXISTS bitsdb;
 CREATE DATABASE bitsdb;
-CREATE TABLE Users (userName VARCHAR(200), photo VARCHAR(200), email VARCHAR(200), password VARCHAR(200), comedian INTEGER, createdAt DATE, updatedAt DATE;
+
+CREATE TABLE Users (
+user_id INT AUTO_INCREMENT PRIMARY KEY,
+userName VARCHAR(200),
+photo VARCHAR(200),
+email VARCHAR(200),
+password VARCHAR(200),
+comedian INTEGER,
+createdAt VARCHAR(200),
+updatedAt VARCHAR(200)
+);
