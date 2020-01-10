@@ -35,7 +35,7 @@ function App() {
       { startDate: '2018-11-01 18:00', endDate: '2018-11-01 19:30', title: 'Go to a gym' },
     ]}
   >
-    <WeekView />
+    <MonthView />
     <Appointments />
   </Scheduler>
       </Router>
