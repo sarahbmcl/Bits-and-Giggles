@@ -12,3 +12,11 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+#comedian-profile {
+  padding: 20px;
+}
+
+#welcome-name {
+  padding: 5px;
+}
