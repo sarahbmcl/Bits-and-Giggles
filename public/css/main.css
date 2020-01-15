@@ -6,9 +6,25 @@
  * Made By MaterializeCSS.com
  */
 
-.icon-block {
+/* .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
 	font-size: inherit;
+}
+
+#comedian-profile {
+  padding: 20px;
+}
+
+#welcome-name {
+  padding: 5px;
+}  */
+
+body {
+  background-color: red;
+}
+
+#profile-photo {
+  max-width: 300px;
 }

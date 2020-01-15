@@ -1,0 +1,21 @@
+{{> messages }}
+{{#if username}}
+<h2>{{ username }}'s profile</h2>
+<container>
+  <div>
+    <p><img id="profile-photo" src="{{ photo }}"></p>
+  </div>
+  <div>
+    <p><strong>Name:</strong></p>
+    <p>{{ name }}</p>
+  </div>
+  <div>
+    <p><strong>Experience Level:</strong></p>
+    <p>{{ experience }}</p>
+  </div>
+  <div>
+    <p><strong>About Me:</strong></p>
+    <p>{{ bio }}</p>
+  </div>
+</container>
+{{/if}}
