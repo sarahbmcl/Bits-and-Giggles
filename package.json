@@ -1,49 +1,28 @@
 {
-  "name": "bitsngiggles",
-  "version": "0.1.0",
+  "name": "accounts",
+  "version": "0.0.0",
   "private": true,
-  "proxy": "http://localhost:3001",
-  "dependencies": {
-    "@auth0/auth0-spa-js": "^1.6.0",
-    "@devexpress/dx-react-core": "^2.3.2",
-    "@devexpress/dx-react-scheduler": "^2.3.2",
-    "@devexpress/dx-react-scheduler-material-ui": "^2.3.2",
-    "@material-ui/core": "^4.8.2",
-    "@material-ui/icons": "^4.5.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "express": "^4.17.1",
-    "express-jwt": "^5.3.1",
-    "jwks-rsa": "^1.6.0",
-    "npm-run-all": "^4.1.5",
-    "react": "^16.12.0",
-    "react-calendar": "^2.19.2",
-    "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev": "npm-run-all --parallel start server",
-    "server": "node server.js"
+    "start": "node ./bin/www"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "hammerjs": "^2.0.8",
+    "handlebars": "^4.7.0",
+    "hbs": "^4.0.6",
+    "http-errors": "^1.6.3",
+    "jquery": "^3.4.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "mongodb": "^3.4.1",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "topology": "^0.2.1"
   }
 }
