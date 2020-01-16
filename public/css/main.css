@@ -23,6 +23,8 @@
 
 #profile-photo {
   max-width: 300px;
+  height: 300px;
+  /* border-radius: 50%; */
 }
 
 a {
@@ -34,7 +36,30 @@ a:visited {
 
 .card {
   margin: auto;
-  padding: 10px;
-  width: 320px;
+  padding: 15px;
+  width: 340px;
   height: 460px;
+
+}
+
+
+
+#text-aligned-center {
+  text-align: center;
+}
+
+.profile-card {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  padding: 15px;
+}
+
+#profile-experience {
+  padding-top: 10px;
 }

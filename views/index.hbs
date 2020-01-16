@@ -1,6 +1,6 @@
-<h1>Bits & Giggles</h1>
+<h1 id="text-aligned-center">Bits & Giggles</h1>
 
-<h2>Recent User Profiles:</h2>
+<h4 id="text-aligned-center">Newest Comedians</h4>
 
 <div class="row">
 {{#each recent}}
@@ -9,10 +9,10 @@
         <div class="card-image">
           <img id="profile-photo" src="{{ photo }}">
         </div>
-        <div class="card-content">
+        <div class="card-content" id="text-aligned-center">
           <span class="card-title">{{ name }}</span>
         </div>
-        <div class="card-action">
+        <div class="card-action" id="text-aligned-center">
           <a href="/users/{{username}}">Meet them here!</a>
         </div>
       </div>
