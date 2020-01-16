@@ -1,12 +1,24 @@
-<h1>User Profiles</h1>
+<h1>Bits & Giggles</h1>
 
 <h2>Recent User Profiles:</h2>
 
-<ul>
+<div class="row">
 {{#each recent}}
-  <li><a href="/users/{{username}}">{{username}}</a></li>
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-image">
+          <img id="profile-photo" src="{{ photo }}">
+        </div>
+        <div class="card-content">
+          <span class="card-title">{{ name }}</span>
+        </div>
+        <div class="card-action">
+          <a href="/users/{{username}}">Meet them here!</a>
+        </div>
+      </div>
+    </div>
 {{/each}}
-</ul>
+</div>
 
 
 <p><a href="/auth/login">Login</a> to update your profile</p>
