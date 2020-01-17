@@ -101,6 +101,12 @@ app.use((req, res, next) => {
   res.locals.loggedIn = req.isAuthenticated();
   next();
 });
+
+app.use((req, res, next) => {
+  res.locals.loggedOut = !req.isAuthenticated();
+  next();
+});
+
 // --------------------------------------------------
 
 app.use('/', indexRouter);

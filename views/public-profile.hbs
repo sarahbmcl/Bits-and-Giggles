@@ -1,21 +1,19 @@
 {{> messages }}
 {{#if username}}
-<h2>Meet {{ name }}!</h2>
 <container>
-      <div class="profile-card">
-        <div class="card-image">
-          <img id="profile-photo" src="{{ photo }}">
-        </div>
-        <div class="card-content" id="profile-experience text-aligned-center">
-            <p><strong>Experience Level:</strong></p>
-            <p>{{ experience }}</p>
-        </div>
-        <p><strong>About Me:</strong></p>
-        <p>{{ bio }}</p>
-        </div>
-      </div>
+  <div class="row profile-card" >
+    <div class="col-12">
+    <h2 id="profile-name">Meet {{ name }}!</h2>
     </div>
+      <div class="card-image col-md pad-image-top">
+        <img id="profile-photo-2" src="{{ photo }}">
+      </div>
+      <div class="card-content col-md" id="profile-experience">
+        <h4><strong>Experience Level:</strong></h4>
+        <p>{{ experience }}</p>
+        <h4><strong>About Me:</strong></h4>
+        <p>{{ bio }}</p>
+      </div>
+  </div>
 </container>
 {{/if}}
-
-    <div class="col s12 m7">
