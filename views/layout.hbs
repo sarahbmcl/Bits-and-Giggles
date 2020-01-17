@@ -14,7 +14,7 @@
     <!-- Compiled and minified JavaScript -->
     <link rel="stylesheet" href="/css/main.css" type="text/css" />
     <link rel="stylesheet" href="/css/materialize.css" type="text/css" />
-  
+    
   </head>
   <nav class="white-background" role="navigation">
   <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><image src="/images/small_logo.png"></a>
@@ -48,39 +48,59 @@
     </div>
   </body>
 
-    <footer class="page-footer dark">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">About This Site</h5>
-          <p class="grey-text text-lighten-4">Use this site as a platform to register for open mic gigs using our calendar for locations in the Austin area , explore comedian profiles, and network in the comedy scene.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect With Us</h5>
-          <ul>
-            <li><a class="white-text" href="https://github.com/ascott1083">AJ Scott</a></li>
-            <li><a class="white-text" href="https://github.com/danshandle">Dan McCarthy</a></li>
-            <li><a class="white-text" href="https://github.com/sarahbmcl">Sarah 'Mac' McLaughlin</a></li>
-            <li><a class="white-text" href="https://github.com/stanstanley512">Shane Stanley</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-            <image src="/images/inverted.png">
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-          <!-- empty div -->
-      </div>
-    </div>
-  </footer>
+<div id="footer"></div>
+ 
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://materializecss.com/templates/parallax-template/js/init.js"></script>
+  <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+      <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
+    <script type='text/babel'>
+      function ReactFooter (){
+        return (
+        <footer className="page-footer dark">
+    <div className="container">
+      <div className="row">
+        <div className="col l6 s12">
+          <h5 className="white-text">About This Site</h5>
+          <p className="grey-text text-lighten-4">Use this site as a platform to register for open mic gigs using our calendar for locations in the Austin area , explore comedian profiles, and network in the comedy scene.</p>
+
+
+        </div>
+        <div className="col l3 s12">
+          <h5 className="white-text">Connect With Us</h5>
+          <ul>
+            <li><a className="white-text" href="https://github.com/ascott1083">AJ Scott</a></li>
+            <li><a className="white-text" href="https://github.com/danshandle">Dan McCarthy</a></li>
+            <li><a className="white-text" href="https://github.com/sarahbmcl">Sarah 'Mac' McLaughlin</a></li>
+            <li><a className="white-text" href="https://github.com/stanstanley512">Shane Stanley</a></li>
+          </ul>
+        </div>
+        <div className="col l3 s12">
+            <img src="/images/inverted.png"></img>
+        </div>
+      </div>
+    </div>
+    <div className="footer-copyright">
+      <div className="container">
+          
+      </div>
+    </div>
+  </footer>)
+
+      }
+      
+        ReactDOM.render(
+        <ReactFooter />,
+        document.getElementById('footer')
+        );
+        
+         </script>
 </html>

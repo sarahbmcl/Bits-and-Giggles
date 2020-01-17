@@ -3,6 +3,7 @@ const router = express.Router();
 const authUtils = require('../utils/auth');
 const passport = require('passport');
 const flash = require('connect-flash');
+const path = require('path');
 
 // Create login page
 // --------------------------------------------------
@@ -60,5 +61,7 @@ router.get('/logout', (req, res, next) => {
   req.session.destroy();
   res.redirect('/');
 });
+
+
 
 module.exports = router;
