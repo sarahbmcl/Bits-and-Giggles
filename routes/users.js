@@ -11,6 +11,7 @@ router.get('/', function(req, res, next) {
   if (!req.isAuthenticated()) { 
     res.redirect('/auth/login');
   }
+
   const users = req.app.locals.users;
   const _id = ObjectID(req.session.passport.user);
 
@@ -22,6 +23,26 @@ router.get('/', function(req, res, next) {
     res.render('account', { ...results });
   });
 });
+
+
+router.get('/', function(req, res, next) {
+  if (req.isAuthenticated()) {
+    res.redirect('auth/logout');
+  }
+  
+  const users = req.app.locals.users;
+  const _id = ObjectID(req.session.passport.user);
+
+  users.findOne({ _id }, (err, results) => {
+    if (err) {
+      throw err;
+    }
+
+    res.render('account', { ...results });
+  });
+});
+
+
 // --------------------------------------------------
 
 

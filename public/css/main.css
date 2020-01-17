@@ -27,6 +27,12 @@
   /* border-radius: 50%; */
 }
 
+#profile-photo-2 {
+  max-width: 300px;
+  height: 300px;
+  padding: 20px;
+}
+
 a {
   color: #000000;
 }
@@ -62,4 +68,11 @@ a:visited {
 
 #profile-experience {
   padding-top: 10px;
+}
+
+#profile-name {
+  background-color: inherit;
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  position: relative;
+  padding: 10px;
 }

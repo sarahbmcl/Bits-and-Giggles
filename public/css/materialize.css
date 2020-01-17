@@ -2171,7 +2171,7 @@ html {
  */
 body {
   margin: 0;
-  background-color: #2aa3d7;
+  background-color: #59bce6;
 
 }
 
@@ -2976,6 +2976,7 @@ ul.staggered-list li {
   padding: 10px 0px;
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(51, 51, 51, 0.08);
+  bottom: 0;
 }
 
 table, th, td {
@@ -6852,9 +6853,9 @@ textarea.materialize-textarea {
   pointer-events: none;
 }
 
-[type="checkbox"] {
-  /* checkbox aspect */
-}
+/* [type="checkbox"] {
+  checkbox aspect
+} */
 
 [type="checkbox"] + span:not(.lever) {
   position: relative;
