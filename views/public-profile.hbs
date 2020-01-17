@@ -1,21 +1,27 @@
 {{> messages }}
 {{#if username}}
-<h2>Meet {{ name }}!</h2>
 <container>
-      <div class="profile-card">
-        <div class="card-image">
-          <img id="profile-photo" src="{{ photo }}">
-        </div>
-        <div class="card-content" id="profile-experience text-aligned-center">
-            <p><strong>Experience Level:</strong></p>
-            <p>{{ experience }}</p>
-        </div>
-        <p><strong>About Me:</strong></p>
-        <p>{{ bio }}</p>
-        </div>
-      </div>
+  <div class="row profile-card" >
+    <div class="col-12">
+    <h2 id="profile-name">Meet {{ name }}!</h2>
     </div>
+      <div class="card-image col-md pad-image-top">
+        <img id="profile-photo-2" src="{{ photo }}">
+      </div>
+      <div class="card-content col-md" id="profile-experience">
+        <h4><strong>Experience Level:</strong></h4>
+        <p>{{ experience }}</p>
+        <h4><strong>About Me:</strong></h4>
+        <p>{{ bio }}</p>
+      </div>
+  </div>
 </container>
 {{/if}}
 
+<<<<<<< HEAD
     <div class="col s12 m7">
+=======
+<div class="col s12 m7">
+
+<iframe src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=Yml0c2FuZGdpZ2dsZXMyMDIwQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%2322AA99&amp;color=%23329262&amp;color=%231F753C" style="border:solid 1px #777" width="1245" height="600" frameborder="0" scrolling="no"></iframe>
+>>>>>>> 6bcb54c642cd7dbcc5976ff3a2882c77b6067270
