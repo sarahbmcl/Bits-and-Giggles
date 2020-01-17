@@ -109,6 +109,12 @@ app.use((req, res, next) => {
 
 // --------------------------------------------------
 
+// test page
+app.get('/test',(req, res)=> {
+  res.sendFile(path.join(__dirname, "test.html"))
+
+});
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
@@ -116,6 +122,8 @@ app.use('/users', usersRouter);
 // --------------------------------------------------
 app.use('/auth', authRouter);
 // --------------------------------------------------
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -132,6 +140,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
 
 
 
