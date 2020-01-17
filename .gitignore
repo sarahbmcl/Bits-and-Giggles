@@ -65,10 +65,3 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
-
-
- .DS_Store
-=======
->>>>>>> 45ccb90bced2e6194b731e1aec83adee1fc35895
->>>>>>> 14cca6a18a6fbbff8ea88805491c233ad04e8e6f
