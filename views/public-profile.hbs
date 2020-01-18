@@ -1,32 +1,47 @@
-{{> messages }}
 {{#if username}}
-<container>
-  <div class="row profile-card" >
-    <div class="col-12">
-    <h2 id="profile-name">Meet {{ name }}!</h2>
-    </div>
-      <div class="card-image col-md pad-image-top">
-        <img id="profile-photo-2" src="{{ photo }}">
+<div id="index-banner" class="parallax-container">
+  <div class="section">
+    <div class="container">
+      <br><br><br>
+      <p class="center bits-main">Meet {{ name }}!</p>
+      <div class="row center">
       </div>
-      <div class="card-content col-md" id="profile-experience">
+      <br><br>
+    </div>
+  </div>
+  <div class="parallax"><img src="/images/profile.jpg"></div>
+</div>
+{{> messages }}
+<container>
+  <div class="row center" id="holds">
+    <div class="col-8 center" id="holds-profile">
+      <div class="profile-card">
+        <div class="card-image col-md pad-image-top">
+        <img id="profile-photo-3" src="{{ photo }}">
+        </div>
+        <div class="card-content col-md" id="profile-experience">
         <h4><strong>Experience Level:</strong></h4>
         <p>{{ experience }}</p>
         <h4><strong>About Me:</strong></h4>
         <p>{{ bio }}</p>
+        </div>
+        <div class="center" id="social-media">
+          <div class="row center">
+            <div class="col center">
+              <p class="center"><a href="https://www.twitter.com/{{ twitter }}"><img class="sm-icon" src="/images/twitter.png"></a></p>
+              </div>
+            <div class="col center">
+              <p class="center brown-text"><a href="https://www.instagram.com/{{ insta }}"><img class="sm-icon" src="/images/instagram.png"></a></p>
+            </div>
+            <div class="col  center">
+              <p class="center brown-text"><a href="https://www.facebook.com/{{ facebook }}"><img class="sm-icon" src="/images/facebook-box.png"></a></p>
+            </div>
+          </div>
+        </div> 
       </div>
-    <div class="row">
-    <div class="col" id="twitter">
-      <h2 class="center brown-text"><img src="/images/twitter.png"><a href="https://www.linkedin.com/in/sarahbmcl/"></a></img></h2>
-    </div>
-    <div class="col" id="facebook">
-      <h2 class="center brown-text"><img src="/images/instagram.png"><a href="https://www.linkedin.com/in/sarahbmcl/"></a></img></h2>
-    </div>
-    <div class="col" id="insta">
-      <h2 class="center brown-text"><img src="/images/facebook-box.png"><a href="https://www.linkedin.com/in/sarahbmcl/"></a></img></h2>
+    </div> 
     </div>
   </div>
-  </div>
-
 </container>
 {{/if}}
 

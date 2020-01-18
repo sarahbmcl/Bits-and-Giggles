@@ -26,7 +26,7 @@
         <li><a href="/users">Edit Profile</a></li>
     </ul>
     <ul class="right hide-on-med-and-down">
-        <li><a href="/users/{{username}}" target="_blank">My Profile</a></li>
+        <li><a href="/users/{{username}}">My Profile</a></li>
     </ul>
     {{/loggedIn}}
     {{#loggedOut}}
@@ -42,7 +42,7 @@
     {{#loggedIn}}
         <li><a href="/auth/logout">Logout</a></li>
         <li><a href="/users">Edit Profile</a></li>
-        <li><a href="/users/{{username}}" target="_blank">My Profile</a></li>
+        <li><a href="/users/{{username}}">My Profile</a></li>
     {{/loggedIn}}   
     {{#loggedOut}}
         <li><a class="black-text" href="/auth/login">Login</a></li>
@@ -55,12 +55,14 @@
   </nav>
 
   <body>
-    <div class="container">
+    <div>
       {{{body}}}
     </div>
   </body>
 
- <!-- Compiled and minified JavaScript -->
+<div id="footer" class="footer"></div>
+
+  <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://materializecss.com/templates/parallax-template/js/init.js"></script>

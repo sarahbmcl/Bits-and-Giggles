@@ -10,7 +10,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   const users = req.app.locals.users;
 
-  users.find().limit(6).toArray((err, recent) => {
+  users.find().limit(3).toArray((err, recent) => {
     res.render('index', { recent } );
   });
 });
