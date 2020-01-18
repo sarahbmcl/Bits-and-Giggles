@@ -15,7 +15,7 @@ mongoose.connect("mongodb://DannyMac:password1@ds011830.mlab.com:11830/heroku_pc
 router.get('/', function(req, res, next) {
   const users = req.app.locals.users;
 
-  users.find().limit(3).toArray((err, recent) => {
+  users.find().limit(11).toArray((err, recent) => {
     res.render('index', { recent } );
   });
 });
