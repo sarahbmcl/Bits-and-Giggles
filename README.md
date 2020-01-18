@@ -52,13 +52,13 @@
 ### Developmental features:
  * User authorization
  * User enabled features
- * Record points based on matches
- * Store match scores
+ * Cross platform calendar integration
+ * Synergystic crystals
 
 
 
 
 
-### [Presentation]
+### [Presentation] (https://docs.google.com/presentation/d/1Aa2kfyjEaQe08P2IkM1yNBlzf7-ZCRaeKxLmfCOrmb8/edit?usp=sharing)
 
 ### Heroku:
