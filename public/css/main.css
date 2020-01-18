@@ -54,11 +54,6 @@ a:visited {
 
 }
 
-#title-text-aligned-center{
-  text-align: center;
-  font-family: 'Luckiest Guy', cursive;
-}
-
 #text-aligned-center {
   text-align: center;
 }
@@ -89,6 +84,8 @@ a:visited {
 .bits-main {
   color: white;
   font-size: 100px;
+  font-family: 'Luckiest Guy', cursive;
+  border-color: black;
 }
 
 .bits-comedians {
@@ -96,6 +93,7 @@ a:visited {
   font-size: 60px;
   padding:20px;
   margin: auto;
+  font-family: 'Prompt', sans-serif;
 }
 
 #laughing-picture {
