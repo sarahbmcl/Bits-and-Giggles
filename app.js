@@ -16,6 +16,7 @@ const flash = require('connect-flash');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var comediansRouter = require ('./routes/comedians');
 
 // Add new routes
 // --------------------------------------------------
@@ -116,6 +117,7 @@ app.get('/test',(req, res)=> {
 });
 
 app.use('/', indexRouter);
+app.use('/comedians', comediansRouter);
 app.use('/users', usersRouter);
 
 // Add new routes
@@ -140,9 +142,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-
-
-
 
 module.exports = app;

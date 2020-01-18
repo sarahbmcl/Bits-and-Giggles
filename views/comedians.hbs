@@ -1,0 +1,27 @@
+<div class="row">
+  <p class="center bits-comedians">Our Comedians</h5>
+</div>
+<div class="center container">
+  <div class="row center">
+  <div id="new-comedian-area center"></div>
+    {{#each recent}}
+      <div class="col center">
+        <div class="card center" id="new-comedian">
+          <div class="card-image">
+            <img id="profile-photo" src="{{ photo }}">
+          </div>
+          <div class="card-content" id="text-aligned-center">
+            <span class="card-title">{{ name }}</span>
+          </div>
+          <div class="card-action" id="text-aligned-center">
+            <a href="/users/{{username}}">Meet them here!</a>
+            <form action="/" method="GET" class="form-inline">
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <div class="row">
+    <br><br>
+  </div>
+</div>
