@@ -25,17 +25,35 @@ const authRouter = require('./routes/auth');
 
 var app = express();
 
-// Connect to db
+// Connect to db local
+// // --------------------------------------------------
+// MongoClient.connect('mongodb://localhost', {useUnifiedTopology: true}, (err, client) => {
+//   if (err) {
+//     throw err;
+//   }
+//   const db = client.db('bitsdb');
+//   const users = db.collection('users');
+//   app.locals.users = users;
+// });
+// // --------------------------------------------------
+
+// Connect to db global mlab
 // --------------------------------------------------
+const uri = "mongodb+srv://sarahbmcl@gmail.com:ss127612@bits-nfbby.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+
 MongoClient.connect('mongodb://localhost', {useUnifiedTopology: true}, (err, client) => {
   if (err) {
     throw err;
   }
-  const db = client.db('bitsdb');
-  const users = db.collection('users');
-  app.locals.users = users;
+  client.connect(err => {
+    const collection = client.db("test").collection("devices");
+    // perform actions on the collection object
+    client.close();
+  });
 });
 // --------------------------------------------------
+
 
 
 // Configure passport
