@@ -26,13 +26,18 @@ var app = express();
 
 // Connect to db
 // --------------------------------------------------
-MongoClient.connect('mongodb://localhost', {useUnifiedTopology: true}, (err, client) => {
-  if (err) {
-    throw err;
-  }
-  const db = client.db('bitsdb');
-  const users = db.collection('users');
-  app.locals.users = users;
+// MongoClient.connect('mongodb://localhost', {useUnifiedTopology: true}, (err, client) => {
+//   if (err) {
+//     throw err;
+//   }
+//   const db = client.db('bitsdb');
+//   const users = db.collection('users');
+//   app.locals.users = users;
+// });
+const mongoose = require('mongoose');
+
+mongoose.connect("mongodb://DannyMac:password1@ds011830.mlab.com:11830/heroku_pcx2vsx4", {
+  useNewUrlParser: true,
 });
 // --------------------------------------------------
 
