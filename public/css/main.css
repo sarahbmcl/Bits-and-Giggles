@@ -102,6 +102,34 @@ a:visited {
   padding: 0;
 }
 
+@media screen and (max-width: 640px) {
+  .bits-main {
+    color: white;
+    font-size: 50px;
+    font-family: 'Luckiest Guy', cursive;
+    border-color: black;
+  }
+  
+  .bits-comedians {
+    color: white;
+    font-size: 40px;
+    padding-bottom: 20px;
+    margin: auto;
+    font-family: 'Prompt', sans-serif;
+    position: relative;
+  }
+
+  #laughing-picture {
+    width: 375px;
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+    right: 0px;
+  }
+  
+}
+
+
 #new-comedian-area{
   padding: 15px;
 }
