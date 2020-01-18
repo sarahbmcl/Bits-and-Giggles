@@ -50,7 +50,8 @@ router.post('/register', (req, res, next) => {
       req.flash('success', 'User account registered successfully.');
     }
 
-    res.redirect('/auth/register');
+    res.redirect('/auth/login');
+
   })
 });
 // --------------------------------------------------
