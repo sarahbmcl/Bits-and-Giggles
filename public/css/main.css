@@ -48,7 +48,10 @@ a:visited {
 
 }
 
-
+#title-text-aligned-center{
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+}
 
 #text-aligned-center {
   text-align: center;

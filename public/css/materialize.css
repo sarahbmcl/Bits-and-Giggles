@@ -3730,6 +3730,12 @@ table span.badge {
   left: 100%;
 }
 
+.row .col{
+  float: none !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media only screen and (min-width: 601px) {
   .row .col.m1 {
     width: 8.3333333333%;
