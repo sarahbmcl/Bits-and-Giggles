@@ -20,7 +20,11 @@
 <div class="row">
   <p class="center headers">Edit Your Profile</p>
 </div>
-
+<div class="row">
+  <div class="col">
+    {{> messages }}
+  </div>
+</div>
 <div class="container">
 <div class="row">
   <div class="col">
@@ -65,10 +69,11 @@
     <div class="form-group">
     <label for="name">Facebook Handle:</label>
     <br>
-    <input type="text" class="form-control" name="insta" id="insta" value="{{ facebook }}">
+    <input type="text" class="form-control" name="facebook" id="facebook" value="{{ facebook }}">
   </div>
 
-  <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Update</button>
+  <button class="btn btn-primary modal-trigger" data-toggle="modal" data-target="#myModal">Update</button>
+
   </form>
   </div>
 </div>
@@ -84,17 +89,13 @@
 </div>
 
 
-
-{{!-- 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
-        <!-- Modal content-->
-    <div class="modal-content">
+      <!-- Modal content-->
       <div class="modal-header">
         <h4 class="modal-title">Profile Updated</h4>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
-    </div>
   </div>
-</div> --}}
+</div>

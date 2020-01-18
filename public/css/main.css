@@ -163,3 +163,8 @@ a:visited {
   margin: auto;
   align-content: center;
 }
+
+#myModal {
+  max-height:150px;
+  max-width: 350px;
+}
