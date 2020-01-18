@@ -25,7 +25,7 @@
     {{> messages }}
   </div>
 </div>
-<div class="container">
+<div class="container" id="edit-profile">
 <div class="row">
   <div class="col">
 <form action="/users" method="POST">
@@ -95,7 +95,9 @@
       <!-- Modal content-->
       <div class="modal-header">
         <h4 class="modal-title">Profile Updated</h4>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+      <div>
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="modal-button">Close</button>
       </div>
   </div>
 </div>

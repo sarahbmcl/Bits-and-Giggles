@@ -193,11 +193,19 @@ a:visited {
 }
 
 #myModal {
-  max-height:150px;
+  max-height: 200px;
   max-width: 350px;
 }
 
 #all-comedian-area {
   margin: 15px;
   margin-bottom: 100px;
+}
+
+#modal-button {
+  margin: 10px;
+}
+
+#edit-profile {
+  padding: 20px;
 }
