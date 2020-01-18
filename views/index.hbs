@@ -1,26 +1,65 @@
-<h1 id="text-aligned-center">Bits & Giggles</h1>
+<div id="index-banner" class="parallax-container">
+  <div class="section">
+    <div class="container">
+      <br><br><br>
+      <p class="center bits-main">Bits & Giggles</p>
+      <div class="row center">
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <div class="parallax"><img src="/images/laughing_audience.jpg" id="laughing-picture"></div>
+</div>
 
-<h4 id="text-aligned-center">Newest Comedians</h4>
+{{!-- <h1 id="text-aligned-center">Bits & Giggles</h1>
+
+<h4 id="text-aligned-center">Newest Comedians</h4> --}}
 
 <div class="row">
-{{#each recent}}
-    <div class="col s12 m7">
-      <div class="card">
-        <div class="card-image">
-          <img id="profile-photo" src="{{ photo }}">
-        </div>
-        <div class="card-content" id="text-aligned-center">
-          <span class="card-title">{{ name }}</span>
-        </div>
-        <div class="card-action" id="text-aligned-center">
-          <a href="/users/{{username}}">Meet them here!</a>
+  <p class="center bits-comedians">Newest Comedians</h5>
+</div>
+<div class="center container">
+  <div class="row center">
+  <div id="new-comedian-area center"></div>
+    {{#each recent}}
+      <div class="col center">
+        <div class="card center" id="new-comedian">
+          <div class="card-image">
+            <img id="profile-photo" src="{{ photo }}">
+          </div>
+          <div class="card-content" id="text-aligned-center">
+            <span class="card-title">{{ name }}</span>
+          </div>
+          <div class="card-action" id="text-aligned-center">
+            <a href="/users/{{username}}">Meet them here!</a>
+          </div>
         </div>
       </div>
+    {{/each}}
+  </div>
+  <div class="row">
+    <br><br>
+  </div>
+</div>
+
+<div id="index-banner" class="parallax-container">
+<div class="section">
+  <div class="container">
+    <br><br><br>
+      <p class="center bits-comedians">Check out our Calendar of Events</h5>
+    {{!-- <div class="row center">
+    </div> --}}
+  </div>
+</div>
+  <div class="parallax"><img src="/images/audience_2.jpg" id="laughing-picture"></div>
+</div>
+
+<div class="center container">
+  <div class="row center">
+    <div class="col">
+      <div class="responsiveCal" id="calendar-padding">
+      <iframe src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=Yml0c2FuZGdpZ2dsZXMyMDIwQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%2322AA99&amp;color=%23329262&amp;color=%231F753C&amp;showTitle=0" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
     </div>
-{{/each}}
+  </div>
 </div>
-
-<div>
-<iframe src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=Yml0c2FuZGdpZ2dsZXMyMDIwQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%2322AA99&amp;color=%23329262&amp;color=%231F753C&amp;showTitle=0" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-</div>
-

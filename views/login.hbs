@@ -1,20 +1,51 @@
-<h2>Login</h2>
-
-{{> messages }}
-
-<div class="profile-card" >
-<form action="/auth/login" method="POST">
-  <div class="form-group">
-    <label for="username">Username:</label>
-    <input type="text" class="form-control" name="username" id="username">
+<div id="index-banner" class="parallax-container">
+  <div class="section">
+    <div class="container">
+      <br><br><br>
+      <p class="center bits-main">Welcome Back</p>
+      <div class="row center">
+      </div>
+      <br><br>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="password">Password:</label>
-    <input type="password" class="form-control" name="password" id="password">
-  </div>
-  <button class="btn btn-primary">Login</button>
-</form>
+  <div class="parallax"><img src="/images/mic2.jpg"></div>
 </div>
 
-<p>Or <a href="/auth/register">Register</a> an account.</p>
+<div class="row">
+  <p class="center headers">Login</p>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      {{> messages }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+<div class="profile-card padded-auth" >
+  <form action="/auth/login" method="POST">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" name="username" id="username">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" name="password" id="password">
+    </div>
+    <button class="btn btn-primary">Login</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <br><br>
+  <div class="col">
+    <p class="alt-white-text center">Or <a href="/auth/register" style="color:#FFFFFF"> Register </a> an account.</p>
+  </div>
+  <br><br>
+</div>
 

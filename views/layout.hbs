@@ -26,7 +26,7 @@
         <li><a href="/users">Edit Profile</a></li>
     </ul>
     <ul class="right hide-on-med-and-down">
-        <li><a href="/users/{{username}}" target="_blank">My Profile</a></li>
+        <li><a href="/users/{{username}}">My Profile</a></li>
     </ul>
     {{/loggedIn}}
     {{#loggedOut}}
@@ -42,7 +42,7 @@
     {{#loggedIn}}
         <li><a href="/auth/logout">Logout</a></li>
         <li><a href="/users">Edit Profile</a></li>
-        <li><a href="/users/{{username}}" target="_blank">My Profile</a></li>
+        <li><a href="/users/{{username}}">My Profile</a></li>
     {{/loggedIn}}   
     {{#loggedOut}}
         <li><a class="black-text" href="/auth/login">Login</a></li>
@@ -55,13 +55,12 @@
   </nav>
 
   <body>
-    <div class="container">
+    <div>
       {{{body}}}
     </div>
   </body>
 
-<div id="footer"></div>
- 
+<div id="footer" class="footer"></div>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -82,9 +81,7 @@
       <div className="row">
         <div className="col l6 s12">
           <h5 className="white-text">About This Site</h5>
-          <p className="grey-text text-lighten-4">Use this site as a platform to register for open mic gigs using our calendar for locations in the Austin area , explore comedian profiles, and network in the comedy scene.</p>
-
-
+          <p className="grey-text text-lighten-4">Use this site as a platform to register as a comedian, create a comedian profile, explore comedian profiles, and view open mics in the Austin area.</p>
         </div>
         <div className="col l3 s12">
           <h5 className="white-text">Connect With Us</h5>
