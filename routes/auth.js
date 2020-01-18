@@ -4,6 +4,11 @@ const authUtils = require('../utils/auth');
 const passport = require('passport');
 const flash = require('connect-flash');
 const path = require('path');
+const mongoose = require('mongoose');
+
+mongoose.connect("mongodb://DannyMac:password1@ds011830.mlab.com:11830/heroku_pcx2vsx4", {
+  useNewUrlParser: true,
+});
 
 // Create login page
 // --------------------------------------------------
