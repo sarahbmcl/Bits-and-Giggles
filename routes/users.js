@@ -3,8 +3,11 @@ var router = express.Router();
 const ObjectID = require('mongodb').ObjectID;
 const flash = require('connect-flash');
 const passport = require('passport');
+const mongoose = require('mongoose');
 
-
+mongoose.connect("mongodb://DannyMac:password1@ds011830.mlab.com:11830/heroku_pcx2vsx4", {
+  useNewUrlParser: true,
+});
 
 // Configure user account profile edit
 // --------------------------------------------------

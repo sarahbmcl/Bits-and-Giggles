@@ -24,6 +24,7 @@
     "jquery": "^3.4.1",
     "materialize-css": "^1.0.0-rc.2",
     "mongodb": "^3.4.1",
+    "mongoose": "^5.8.9",
     "morgan": "^1.9.1",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
@@ -31,6 +32,4 @@
     "react-konami": "^0.6.2",
     "topology": "^0.2.1"
   }
-  
 }
-
