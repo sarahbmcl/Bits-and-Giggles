@@ -16,6 +16,15 @@ router.get('/', function(req, res, next) {
 });
 // --------------------------------------------------
 
+// Create custom homepage
+// --------------------------------------------------
+router.get('/comedians', function(req, res, next) {
+  const users = req.app.locals.users;
+
+  users.find().limit(9).toArray((err, recent) => {
+    res.render('comedians', { recent } );
+  });
+});
 
 // React Konami Code Easter Egg
 

@@ -30,6 +30,9 @@
     <ul class="right hide-on-med-and-down">
         <li><a href="/users/{{username}}">My Profile</a></li>
     </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="black-text" href="/comedians">Comedians</a></li>
+    </ul>
     {{/loggedIn}}
     {{#loggedOut}}
     <ul class="right hide-on-med-and-down">
@@ -38,6 +41,9 @@
     <ul class="right hide-on-med-and-down">
         <li><a class="black-text" href="/auth/register">Register</a></li>
     </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="black-text" href="/comedians">Comedians</a></li>
+    </ul>
     {{/loggedOut}}
 
     <ul id="nav-mobile" class="sidenav">
@@ -45,10 +51,12 @@
         <li><a href="/auth/logout">Logout</a></li>
         <li><a href="/users">Edit Profile</a></li>
         <li><a href="/users/{{username}}">My Profile</a></li>
+        <li><a href="/comedians">Comedians</a></li>
     {{/loggedIn}}   
     {{#loggedOut}}
         <li><a class="black-text" href="/auth/login">Login</a></li>
         <li><a class="black-text" href="/auth/register">Register</a></li>
+        <li><a href="/comedians">Comedians</a></li>
     {{/loggedOut}}
     </ul>
 
