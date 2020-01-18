@@ -33,6 +33,12 @@
   padding: 20px;
 }
 
+#profile-photo-3 {
+  max-width: 450px;
+  height: 450px;
+  padding: 20px;
+}
+
 a {
   color: #000000;
 }
@@ -59,14 +65,14 @@ a:visited {
 
 .profile-card {
   position: relative;
-  margin: 0.5rem 0 1rem 0;
+  margin: auto;
   background-color: #fff;
+  padding: 15px;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
   transition: box-shadow .25s;
   transition: box-shadow .25s, -webkit-box-shadow .25s;
   border-radius: 2px;
-  padding: 15px;
 }
 
 #profile-experience {
@@ -78,4 +84,84 @@ a:visited {
   border-bottom: 1px solid rgba(160, 160, 160, 0.2);
   position: relative;
   padding: 10px;
+}
+
+.bits-main {
+  color: white;
+  font-size: 100px;
+}
+
+.bits-comedians {
+  color: white;
+  font-size: 60px;
+  padding:20px;
+  margin: auto;
+}
+
+#laughing-picture {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#new-comedian-area{
+  padding: 15px;
+}
+
+#new-comedian {
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+#calendar {
+  min-width: 100%;
+  margin: auto;
+}
+
+.responsiveCal {
+  position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+}
+   
+.responsiveCal iframe {
+  position: absolute; top:0; left: 0; width: 100%; height: 100%;
+}  
+
+#calendar-paddding {
+  margin: 20px;
+}
+
+.headers {
+  color: white;
+  font-size: 60px;
+  padding:20px;
+  margin: auto;
+}
+
+.alt-white-text {
+  color: white;
+  padding:20px;
+  margin: auto;
+  font-size: larger;
+}
+
+.padded-auth {
+  padding: 30px;
+}
+
+#holds-profile {
+  margin: auto;
+}
+
+#holds {
+  margin-top:25px;
+  margin-bottom: 25px;
+}
+
+#social-media {
+  margin: auto;
+}
+
+.sm-icon {
+  margin: auto;
+  align-content: center;
 }
