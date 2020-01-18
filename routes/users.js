@@ -97,7 +97,7 @@ router.post('/', (req, res, next) => {
       throw err;
     };
     
-    res.redirect('/users');
+    // res.redirect('/users');
   });
 });
 

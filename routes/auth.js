@@ -72,35 +72,36 @@ router.get('/logout', (req, res, next) => {
 
 // Create edit page
 // --------------------------------------------------
-router.get('/users', (req, res, next) => {
-  const messages = req.flash();
-  res.render('account', { messages });
-});
+// router.get('/users', (req, res, next) => {
+//   const messages = req.flash();
+//   res.render('account', { messages });
+// });
 // --------------------------------------------------
 
 // Post to edit page
 // --------------------------------------------------
 
-router.post('/users', (req, res, next) => {
+// router.post('/users', (req, res, next) => {
   
-  const users = req.app.locals.users;
-  const { name, photo, experience, bio } = req.body;
-  const _id = ObjectID(req.session.passport.user);
+//   const users = req.app.locals.users;
+//   const { name, photo, experience, bio } = req.body;
+//   const _id = ObjectID(req.session.passport.user);
 
-  users.updateOne({ _id }, { $set: { name, photo, experience, bio } }, (err) => {
-    if (err) {
-      req.flash('error', 'Profile could not be updated.');
-    } else 
-    {
-      req.flash('success', 'Profile was updated successfully.');
-    };
+//   users.updateOne({ _id }, { $set: { name, photo, experience, bio } }, (err) => {
+//     if (err) {
+//       req.flash('error', 'Profile could not be updated.');
+//     } else 
+//     {
+//       req.flash('success', 'Profile was updated successfully.');
+//     };
 
-    res.redirect('/users');
+//     res.redirect('/users');
 
-  });
+//   });
 
-});
+// });
 // --------------------------------------------------
+
 
 
 module.exports = router;

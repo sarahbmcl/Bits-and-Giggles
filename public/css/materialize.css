@@ -2178,6 +2178,7 @@ body {
 /**
  * Add the correct display in IE 9-.
  */
+ 
 article,
 aside,
 footer,
@@ -2851,6 +2852,40 @@ video.responsive-video {
   object-fit: fill;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+}
+
+@media screen and (max-width: 640px) {
+  .parallax-container {
+    position: relative;
+    overflow: hidden;
+    min-width: 100%;
+    height: 50%;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    border-radius: 2px;
+  }
+
+  .parallax-container .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .parallax-container .parallax img {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }
 
 .pin-top, .pin-bottom {
@@ -3724,6 +3759,12 @@ table span.badge {
 
 .row .col.push-s12 {
   left: 100%;
+}
+
+.row .col{
+  float: none !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (min-width: 601px) {
