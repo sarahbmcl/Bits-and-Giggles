@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
 router.get('/comedians', function(req, res, next) {
   const users = req.app.locals.users;
 
-  users.find().limit(9).toArray((err, recent) => {
+  users.find().toArray((err, recent) => {
     res.render('comedians', { recent } );
   });
 });
