@@ -26,19 +26,19 @@ var app = express();
 
 // Connect to db
 // --------------------------------------------------
-// MongoClient.connect('mongodb://localhost', {useUnifiedTopology: true}, (err, client) => {
-//   if (err) {
-//     throw err;
-//   }
-//   const db = client.db('bitsdb');
-//   const users = db.collection('users');
-//   app.locals.users = users;
-// });
-const mongoose = require('mongoose');
-
-mongoose.connect("mongodb://DannyMac:password1@ds011830.mlab.com:11830/heroku_pcx2vsx4", {
-  useNewUrlParser: true,
+MongoClient.connect('mongodb://DannyMac:password1@ds011830.mlab.com:11830/heroku_pcx2vsx4', {useUnifiedTopology: true}, (err, client) => {
+  if (err) {
+    throw err;
+  }
+  const db = client.db('heroku_pcx2vsx4');
+  const users = db.collection('bitsgigsdb');
+  app.locals.users = users;
 });
+// const mongoose = require('mongoose');
+
+// mongoose.connect("mongodb://DannyMac:password1@ds011830.mlab.com:11830/heroku_pcx2vsx4", {
+//   useNewUrlParser: true,
+// });
 // --------------------------------------------------
 
 
