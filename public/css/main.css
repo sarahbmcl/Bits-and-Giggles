@@ -62,7 +62,7 @@ a:visited {
   position: relative;
   margin: auto;
   background-color: #fff;
-  padding: 15px;
+  padding: 25px;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
   transition: box-shadow .25s;
