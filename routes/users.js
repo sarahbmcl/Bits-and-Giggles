@@ -82,7 +82,7 @@ router.get('/:username', (req, res, next) => {
 router.post('/', (req, res, next) => {
   
   const users = req.app.locals.users;
-  const { name, photo, experience, bio } = req.body;
+  const { name, photo, experience, bio, insta, facebook, twitter } = req.body;
   const _id = ObjectID(req.session.passport.user);
 
   if (!req.isAuthenticated()) {
