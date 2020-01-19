@@ -89,7 +89,7 @@ router.post('/', (req, res, next) => {
     res.redirect('/auth/login');
   }
 
-  users.updateOne({ _id }, { $set: { name, photo, experience, bio } }, (err) => {
+  users.updateOne({ _id }, { $set: { name, photo, experience, bio, insta, facebook, twitter } }, (err) => {
     if (err) {
       throw err;
     };
